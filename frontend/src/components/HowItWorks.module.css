@@ -1,0 +1,85 @@
+.howItWorksSection {
+  padding: 50px 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 50px;
+  background: #d3d3d3; /* Changed from yellow to grey */
+  margin-bottom: 5px; /* Added bottom margin */
+}
+
+.howItWorksTitle {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 10px; /* Adds padding inside the heading */
+  border-radius: 5px; /* Optional: Adds a slight border radius */
+  color: #fff; /* White text color *//* Set background to transparent */
+}
+
+.howItWorksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.howItWorksCard {
+  background: #fff;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.howItWorksCard:hover {
+  transform: translateY(-10px);
+  background: #111;
+  color: #fff;
+}
+
+.howItWorksIconWrapper {
+  width: fit-content;
+  display: flex;
+  background: #111;
+  padding: 10px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.howItWorksIcon {
+  font-size: 40px;
+  color: #fff;
+}
+
+.howItWorksCard:hover .howItWorksIconWrapper {
+  background: #fff;
+}
+
+.howItWorksCard:hover .howItWorksIcon {
+  color: #111;
+}
+
+.howItWorksCardTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.howItWorksCardText {
+  color: gray;
+}
+
+@media (max-width: 1720px) {
+  .howItWorksSection {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .howItWorksCard {
+    padding: 20px;
+  }
+}

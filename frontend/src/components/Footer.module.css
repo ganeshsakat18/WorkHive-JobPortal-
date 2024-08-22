@@ -1,0 +1,128 @@
+.footer {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(133, 133, 133);
+  padding: 15px 15px;
+  flex-wrap: wrap;
+  
+}
+
+.footerLogo {
+  flex: 0 0 15%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footerSupport,
+.footerLinks,
+.footerFollowUs {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures content starts from the top */
+  align-items: flex-start; /* Aligns text to the left */
+}
+
+.footerSupport h4,
+.footerLinks h4,
+.footerFollowUs h4 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: gainsboro;
+  margin: 0; /* Removes default margin from ul */
+  padding: 0; /* Removes default padding from ul */
+  list-style: none; /* Removes bullet points */
+}
+
+.footerListItem {
+  overflow-y: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: gainsboro;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #dfdf07;
+  transition: 0.3s;
+}
+
+.icon {
+  display: flex;
+}
+
+.copyright {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 1112px) {
+  .footer {
+    padding: 15px 15px;
+  }
+
+  .footerLogo,
+  .footerSupport,
+  .footerLinks,
+  .footerFollowUs {
+    flex: none;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .footerLogo {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 606px) {
+  .footerLogo {
+    justify-content: center;
+  }
+
+  .footerLogo img {
+    width: 180px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footerLogo,
+  .footerSupport,
+  .footerLinks,
+  .footerFollowUs {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,20 @@
+.captionHover {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.captionHover:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.captionHover h1,
+.captionHover p {
+  transition: color 0.3s ease;
+}
+
+.captionHover:hover h1,
+.captionHover:hover p {
+  color: #fff;
+}

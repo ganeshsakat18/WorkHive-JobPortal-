@@ -1,0 +1,188 @@
+.authPage {
+  display: flex;
+  min-width: 100%; /* Make it fully responsive */
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.loginContainer {
+  max-width: 550px;
+  width: 100%;
+  margin: 0; /* Remove auto margin to align to the right */
+}
+
+.header {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  background: rgba(0, 51, 102, 0.1);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 51, 102, 0.05);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.inputTag {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputTag label {
+  font-weight: 600; /* Improve label visibility */
+}
+
+.inputTag div {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  background: #87878778;
+}
+
+.inputTag div input,
+.inputTag div select {
+  flex: 1; /* Allow input to use all available space */
+  background: transparent;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 7px 0 0 7px; /* Round the left side */
+  font-size: 1rem;
+}
+
+.inputTag div input:focus,
+.inputTag div select:focus {
+  outline: none;
+  border-color: #003366; /* Highlight input on focus */
+}
+
+.inputTag div svg {
+  font-size: 1.5rem;
+  background: #003366;
+  padding: 10px;
+  color: #fff;
+  border-radius: 0 7px 7px 0; /* Round the right side */
+}
+
+.button {
+  padding: 12px;
+  text-align: center;
+  border: none;
+  margin-top: 25px;
+  font-weight: 700;
+  color: #fff;
+  background: #003366;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:disabled {
+  background: #666; /* Make the button look disabled */
+  cursor: not-allowed;
+}
+
+.link {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #003366;
+  margin-top: 25px;
+  font-weight: 700;
+  color: #003366;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background: #003366;
+  color: #fff;
+}
+
+.passwordToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #003366;
+  padding: 0 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.banner {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.banner img {
+  max-width: 550px;
+  height: auto;
+  border-radius: 7px;
+}
+
+@media (max-width: 1030px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    display: none; /* Hide image on smaller screens */
+  }
+}
+
+@media (max-width: 830px) {
+  .authPage {
+    min-height: auto;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .banner {
+    display: none;
+  }
+}

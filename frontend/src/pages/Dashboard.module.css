@@ -1,0 +1,374 @@
+/* Container for the entire account section */
+.account {
+  padding: 40px 100px;
+  min-height: 800px;
+  background: rgba(233, 241, 247, 0.9); /* Semi-transparent background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Header styling with transparency and hover effect */
+.componentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Add some padding */
+  box-shadow: 0 2px 10px rgba(160, 22, 22, 0.1); /* Subtle shadow */
+  transition: background 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.componentHeader:hover {
+  background: rgba(255, 255, 255, 1); /* Solid white background on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.componentHeader p {
+  font-weight: 500;
+  color: #111;
+}
+
+.componentHeader p:last-child span {
+  color: #aa4dcc;
+}
+
+/* Main container for sidebar and content */
+.container {
+  display: flex;
+}
+
+/* Sidebar container */
+.sidebar {
+  min-width: 252px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebarTitle {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Sidebar links */
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+
+}
+
+.sidebarLinkButton {
+  color: gray;
+  text-decoration: none;
+  font-weight: 300;
+  transition: 0.3s;
+  border: none;
+  background: transparent;
+}
+
+.sidebarLinkButton:hover {
+  color: #f06123;
+  transition: 0.3s;
+}
+
+.activeLink {
+  color: #fff;
+}
+
+/* Banner container */
+.banner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accountComponents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.viewResumeButton {
+  background: #111;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 20px;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 600;
+  color: #7382c3;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.infoTagWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.infoTag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.inputField,
+.selectField,
+.textareaField {
+  background: #8080805e;
+  border: none;
+  color: #555;
+  padding: 8px 3px;
+}
+
+.inputField:focus,
+.selectField:focus,
+.textareaField:focus {
+  outline: none;
+}
+
+.profileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.saveButtonWrapper {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.saveButton {
+  width: fit-content;
+}
+
+.fileSelectorButton {
+  width: 100%;
+  padding: 7px;
+}
+
+.fileInput {
+  background: none;
+}
+
+.eyeIcon {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.updatePasswordInput {
+  padding-right: 65px;
+}
+
+.inboxCard {
+  background: #f5f5f5;
+  padding: 22px 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 8px;
+}
+
+.inboxCard:hover {
+  background: rgba(133, 133, 124, 0.19);
+}
+
+.applicationsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.applicationCard {
+  background: #8080803d;
+  padding: 25px 12px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+
+.applicationSubSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+  color: gray;
+}
+
+.applicationSubSection span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #111;
+}
+
+.applicationTextarea {
+  background: transparent;
+  font-size: 16px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/* Sidebar icon movement */
+.sidebarIcon {
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.moveLeft {
+  left: 0;
+  transition: 0.3s;
+  background: #111;
+  z-index: 2;
+}
+
+.moveRight {
+  left: 252px;
+  transition: 0.3s;
+  background: #fff;
+  z-index: 2;
+}
+
+.moveRight svg {
+  font-size: 30px;
+  color: #111;
+}
+
+.moveLeft svg {
+  font-size: 30px;
+  color: #fff;
+}
+
+.leftArrow {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.rightArrow {
+  transition: 0.3s;
+  transform: rotate(360deg);
+}
+
+/* Media queries */
+@media (max-width: 920px) {
+  .account {
+    padding: 40px 20px;
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 712px) {
+  .sectionTitle {
+    margin-top: 27px;
+  }
+
+  .componentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .sidebarIcon {
+    display: flex;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 100%;
+    position: relative;
+    bottom: -18px;
+  }
+
+  .moveLeft {
+    left: 0;
+    transition: 0.3s;
+    background: #111;
+    z-index: 2;
+  }
+
+  .moveRight {
+    left: 252px;
+    transition: 0.3s;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .moveRight svg {
+    font-size: 30px;
+    color: #111;
+  }
+
+  .moveLeft svg {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .sidebar {
+    position: absolute;
+    transition: 0.3s;
+    left: -100%;
+  }
+
+  .showSidebar {
+    left: 0;
+    transition: 0.3s;
+    background: #d7d5d5;
+    height: 100%;
+    width: 308px;
+    padding: 20px 5px;
+    z-index: 2;
+  }
+
+  .leftArrow {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  .rightArrow {
+    transition: 0.3s;
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 512px) {
+  .saveButton {
+    width: 100%;
+  }
+
+  .profileImage {
+    margin: 0 auto;
+  }
+}

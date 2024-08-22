@@ -1,0 +1,166 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mission {
+  font-size: 1.4rem;
+  color: #34495e;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.story, .impactSection, .testimonials, .callToAction {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #2980b9;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  border-radius: 2px;
+}
+
+.impactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.impactContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.impactImageWrapper {
+  flex: 1;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.impactImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.impactImage:hover {
+  transform: scale(1.05);
+}
+
+.impactText {
+  flex: 1;
+  max-width: 500px;
+  margin: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.testimonials p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+  border-left: 4px solid #2980b9;
+  padding-left: 15px;
+  background: #f2f7fb;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.callToAction p {
+  font-size: 1.2rem;
+  color: #34495e;
+  font-weight: 500;
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.callToAction p:hover {
+  background: #d6dbdf;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .mission {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .impactContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .impactImageWrapper, .impactText {
+    max-width: 100%;
+  }
+
+  .testimonials p {
+    font-size: 1rem;
+  }
+
+  .callToAction p {
+    font-size: 1.1rem;
+  }
+}

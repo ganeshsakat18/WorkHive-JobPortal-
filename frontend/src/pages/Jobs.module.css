@@ -1,0 +1,220 @@
+.jobs {
+  padding: 40px 100px;
+  min-height: 800px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.filterBar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cities,
+.niches {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.citiesTitle,
+.nichesTitle {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.cityOption,
+.nicheOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchTabWrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 750px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 12px 140px 12px 8px;
+  border: 1px solid gray;
+}
+
+.searchIcon {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  color: #111;
+}
+
+.searchButton {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+  background: #dfdf07;
+  color: #111;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+.container {
+  width: 75%;
+}
+
+.jobsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 40px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.card {
+  transition: 0.3s;
+  text-decoration: none;
+  background: #f5f5f5;
+  height: fit-content;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 6px;
+}
+
+.cardTitle {
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hiringMultiple {
+  font-size: 16px;
+  color: #008b00;
+  background: #008b0033;
+  padding: 3px 4px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.hiring {
+  color: rgb(0, 145, 255);
+  font-size: 16px;
+  background: rgba(0, 145, 255, 0.338);
+  padding: 3px 4px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.cardDetail {
+  font-size: 16px;
+  color: rgb(174, 21, 21);
+}
+
+.cardDetailStrong {
+  font-weight: 600;
+  color: #111;
+  font-size: 16px;
+}
+
+.card:hover {
+  transition: 0.3s;
+  background: rgba(133, 133, 124, 0.19);
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.mobileFilter {
+  display: none;
+}
+.cities,
+.niches {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-color: rgba(193, 211, 227, 0.8); /* Add a background color */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+@media (max-width: 920px) {
+  .jobs {
+    padding: 40px 20px;
+  }
+
+  .searchTabWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .filterBar {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .jobsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid gray;
+    margin-top: 20px;
+  }
+
+  .mobileFilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .mobileFilterSelect {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    padding: 20px 8px;
+  }
+
+  .mobileFilterSelect {
+    width: 100%;
+  }
+
+  .searchInput {
+    padding: 12px 55px 12px 8px;
+  }
+
+  .searchButton {
+    display: none;
+  }
+
+  .searchIcon {
+    display: block;
+  }
+}

@@ -1,0 +1,27 @@
+.topNichesContainer {
+  margin-top: 20px; /* Adds margin from the top */
+}
+
+.leadingSectorsHeading {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 10px; /* Adds padding inside the heading */
+  border-radius: 5px; /* Optional: Adds a slight border radius */
+  color: #fff; /* White text color */
+}
+
+.nicheImage {
+  margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nicheImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .leadingSectorsHeading {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
