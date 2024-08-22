@@ -1,6 +1,5 @@
 <h1 align="center">WorkHive - Job Portal 🌐</h1>
 
-![Demo App](/frontend/1.png)
 
 ### Overview
 
@@ -26,13 +25,28 @@ Welcome to **WorkHive**, a dynamic job portal designed to connect employers with
 
 - 📱 **Responsive Design**: Fully optimized for a smooth experience on both desktop and mobile devices.
 
+###Demo
+![Demo App](/frontend/1.png)
+![Demo App](/frontend/2.png)
+![Demo App](/frontend/3.png)
+![Demo App](/frontend/4.png)
+
 ### Setup
 
 Create a `.env` file in the root directory with the following environment variables:
 
 ```bash
-PORT=5000
-MONGO_URI=your_mongo_uri
-NODE_ENV=development
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_URL=your_cloudinary_url
+PORT=4000
+MONGO_URI=mongodb://127.0.0.1:27017
+FRONTEND_URL=http://localhost:5173
+JWT_SECRET_KEY=your_jwt_secret_key
+JWT_EXPIRE=7d
+COOKIE_EXPIRE=7
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+SMTP_SERVICE=gmail
+SMTP_MAIL=your_email@gmail.com
+SMTP_PASSWORD=your_email_password
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
